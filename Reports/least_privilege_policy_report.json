@@ -1,0 +1,20 @@
+{
+    "report_title": "IAM Policy Risk Analysis Report",
+    "generated_at_utc": "2026-10-19T12:51:55.567073+00:00",
+    "policy_file": "least_privilege_policy.json",
+    "summary": {
+        "total_findings": 1,
+        "high": 0,
+        "medium": 0,
+        "info": 1
+    },
+    "findings": [
+        {
+            "severity": "INFO",
+            "issue": "Scoped resource wildcard",
+            "details": "Statement 1 uses a wildcard within a resource pattern. This may be appropriate for object-level access but requires review.",
+            "recommendation": "Verify that the ARN scope matches the intended resources and that the allowed actions are appropriate."
+        }
+    ],
+    "disclaimer": "This report uses educational, rule-based heuristics. It is not a complete AWS IAM security assessment, and the absence of findings does not prove a policy is secure."
+}
